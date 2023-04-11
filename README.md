@@ -9,7 +9,7 @@ Attirbutes Information:
 
 **Name** - ASCII subject name and recording number
 
-**MDVP:Fo(Hz) **- Average vocal fundamental frequency
+**MDVP:Fo(Hz)**- Average vocal fundamental frequency
 
 **MDVP:Fhi(Hz)** - Maximum vocal fundamental frequency
 
