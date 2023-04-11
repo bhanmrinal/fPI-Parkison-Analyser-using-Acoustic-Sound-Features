@@ -1,4 +1,4 @@
-# Parkinson-Prediciton
+# Parkinson Detection using M.L
 Parkinson's disease is a chronic condition that leads to the gradual loss of dopaminergic neurons in the brain. 
 Studies suggest that vocal impairment is a common symptom in 70% to 90% of Parkinson's patients. 
 To differentiate between healthy and Parkinson's patients, a dataset was collected consisting of biomedical voice measurements from 31 individuals, 23 of whom have Parkinson's disease. 
