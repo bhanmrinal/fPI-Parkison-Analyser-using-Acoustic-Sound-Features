@@ -1,31 +1,60 @@
-# Parkinson Detection using M.L
-Parkinson's disease is a chronic condition that leads to the gradual loss of dopaminergic neurons in the brain. 
-Studies suggest that vocal impairment is a common symptom in 70% to 90% of Parkinson's patients. 
-To differentiate between healthy and Parkinson's patients, a dataset was collected consisting of biomedical voice measurements from 31 individuals, 23 of whom have Parkinson's disease. 
-The "status" column is used to indicate whether an individual is healthy (assigned 0) or has Parkinson's disease (assigned 1).
+## fPI: Predicting Parkinson's with Acoustic Features
 
-Initially in ASCII CSV format, the data was converted to .xlsx for analysis. 
-Attirbutes Information:
+What is Parkinson's Disease?
 
-**Name** - ASCII subject name and recording number
+Parkinson's disease is a neurodegenerative disorder that affects millions of people worldwide. It's characterized by the gradual loss of dopaminergic neurons in the brain, leading to tremors, rigidity, and difficulty with movement.
 
-**MDVP:Fo(Hz)**- Average vocal fundamental frequency
+### Dataset
+We've utilized a dataset containing biomedical voice measurements from 31 individuals. Here's a breakdown:
 
-**MDVP:Fhi(Hz)** - Maximum vocal fundamental frequency
+- Participants: 31 individuals (23 with Parkinson's, 8 healthy)\
+- Format: Initially ASCII CSV, converted to .xlsx for easier analysis
 
-**MDVP:Flo(Hz)** - Minimum vocal fundamental frequency
+ #### Attributes:
+- Name: ``Subject name and recording number``
 
-**MDVP:Jitter(%),MDVP:Jitter(Abs),MDVP:RAP,MDVP:PPQ,Jitter:DDP** - Several measures of variation in fundamental frequency
+- Vocal Fundamental Frequency ``(MDVP:Fo, Fhi, Flo) ️``
 
-**MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA** - Several measures of variation in amplitude
+- Jitter and Shimmer Measures ``(variation in frequency and amplitude)``
 
-**NHR,HNR** - Two measures of ratio of noise to tonal components in the voice
+- Noise-to-Honer Ratio ``(NHR, HNR) ⚖️``
 
-**status** - Health status of the subject (one) - Parkinson's, (zero) - healthy
+- Nonlinear Dynamical Complexity ``(RPDE, D2)``
 
-**RPDE,D2** - Two nonlinear dynamical complexity measures
+- Signal Fractal Scaling Exponent ``(DFA)``
 
-**DFA** - Signal fractal scaling exponent
+- Nonlinear Measures of Frequency Variation ``(spread1, spread2, PPE) 〰️``
 
-**spread1,spread2,PPE** - Three nonlinear measures of fundamental frequency variation
+- status: Health status ``(1 = Parkinson's, 0 = Healthy)``
 
+### Novelty
+
+Based on our correlation map analysis, we identified a potentially valuable feature combination: Denoted as the **fPI Analyser** 
+
+``log10(DFA * D2 * spread2)``
+
+- D2: Nonlinear dynamical complexity measure
+- DFA: Signal fractal scaling exponent
+- spread2: Nonlinear measure of fundamental frequency variation
+This combined feature may offer stronger predictive power for Parkinson's detection using machine learning models.
+
+### Model Development and Evaluation
+
+We investigated the effectiveness of fPI by training and evaluating four machine learning models: **Decision Trees, Support Vector Machines, Random Forest, and XGBoost**. We used four performance metrics to assess their effectiveness: _Precision, Accuracy, F1-score, and Recall_. This comprehensive evaluation helped us identify the best model for Parkinson's detection using fPI.
+
+### Deployment
+
+This project is deployed as a full-stack web application, enabling global access to the Parkinson's disease detection system. The application leverages the following technologies:
+
+``Frontend``: React.js - A JavaScript library for building dynamic and interactive user interfaces.
+
+``Backend``: Django with Django REST framework (DRF) - A Python web framework for rapid development of APIs and web applications. DRF provides a robust foundation for building RESTful APIs.
+
+``Database``: PostgreSQL - A powerful open-source object-relational database management system (ORDBMS) for storing and managing application data.
+
+``Containerization``: Docker - A platform for developing, deploying, and running applications in containers. Docker ensures consistent and isolated environments across different deployment platforms.
+
+### Results 
+![image](https://github.com/bhanmrinal/Predictive-Analysis-for-Parkinsons-Disease-using-ML/assets/97622240/037b3989-51b8-46d7-b163-6ea5af7ed9cd)
+
+![image](https://github.com/bhanmrinal/Predictive-Analysis-for-Parkinsons-Disease-using-ML/assets/97622240/a114921b-c139-4809-a5e8-d2b7b9815b56)
