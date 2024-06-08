@@ -1,4 +1,4 @@
-## fPI: Predicting Parkinson's with Acoustic Features
+# fPI: Predicting Parkinson's with Acoustic Features
 
 What is Parkinson's Disease?
 
