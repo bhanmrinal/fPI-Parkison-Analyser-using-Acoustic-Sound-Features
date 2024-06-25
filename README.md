@@ -46,13 +46,11 @@ We investigated the effectiveness of fPI by training and evaluating four machine
 
 This project is deployed as a full-stack web application, enabling global access to the Parkinson's disease detection system. The application leverages the following technologies:
 
-``Frontend``: React.js - A JavaScript library for building dynamic and interactive user interfaces.
+``Frontend``: React.js for building dynamic and interactive user interfaces.
 
-``Backend``: Django with Django REST framework (DRF) - A Python web framework for rapid development of APIs and web applications. DRF provides a robust foundation for building RESTful APIs.
+``Backend``: Django with Django REST framework (DRF) for rapid development of APIs and web applications. DRF provides a robust foundation for building RESTful APIs.
 
-``Database``: PostgreSQL - A powerful open-source object-relational database management system (ORDBMS) for storing and managing application data.
-
-``Containerization``: Docker - A platform for developing, deploying, and running applications in containers. Docker ensures consistent and isolated environments across different deployment platforms.
+``Database``: PostgreSQL for storing and managing application data.
 
 ### Results 
 ![image](https://github.com/bhanmrinal/Predictive-Analysis-for-Parkinsons-Disease-using-ML/assets/97622240/037b3989-51b8-46d7-b163-6ea5af7ed9cd)
