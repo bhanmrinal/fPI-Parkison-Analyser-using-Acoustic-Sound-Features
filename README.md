@@ -53,6 +53,16 @@ This project is deployed as a full-stack web application, enabling global access
 ``Database``: PostgreSQL for storing and managing application data.
 
 ### Results 
+<div align ="center">
+
 ![image](https://github.com/bhanmrinal/Predictive-Analysis-for-Parkinsons-Disease-using-ML/assets/97622240/037b3989-51b8-46d7-b163-6ea5af7ed9cd)
 
+_Metric scores for different ML Models_
+
 ![image](https://github.com/bhanmrinal/Predictive-Analysis-for-Parkinsons-Disease-using-ML/assets/97622240/a114921b-c139-4809-a5e8-d2b7b9815b56)
+
+_Metric plots for True Positive and False Positive Estimation_
+
+ 
+</div>
+
