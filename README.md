@@ -1,5 +1,7 @@
 # fPI: Predicting Parkinson's with Acoustic Features
 
+**Author:** Gautam Gupta, Mrinal Bhan
+
 What is Parkinson's Disease?
 
 Parkinson's disease is a neurodegenerative disorder that affects millions of people worldwide. It's characterized by the gradual loss of dopaminergic neurons in the brain, leading to tremors, rigidity, and difficulty with movement.
