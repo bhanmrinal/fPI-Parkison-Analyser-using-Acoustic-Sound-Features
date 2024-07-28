@@ -1,6 +1,8 @@
 # fPI: Predicting Parkinson's with Acoustic Features
 
-**Author:** Gautam Gupta, Mrinal Bhan
+## Authors
+- [Gautam Gupta](https://github.com/GautamGupta17)
+- [Mrinal Bhan](https://github.com/bhanmrinal)
 
 What is Parkinson's Disease?
 
