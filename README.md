@@ -9,9 +9,9 @@ What is Parkinson's Disease?
 Parkinson's disease is a neurodegenerative disorder that affects millions of people worldwide. It's characterized by the gradual loss of dopaminergic neurons in the brain, leading to tremors, rigidity, and difficulty with movement.
 
 ### Dataset
-We've utilized a dataset containing biomedical voice measurements from 31 individuals. Here's a breakdown:
+We've utilized a dataset containing biomedical voice measurements from 198 individuals. Here's a breakdown:
 
-- Participants: 31 individuals (23 with Parkinson's, 8 healthy)\
+- Participants: 31 individuals (140 with Parkinson's, 58 healthy)\
 - Format: Initially ASCII CSV, converted to .xlsx for easier analysis
 
  #### Attributes:
