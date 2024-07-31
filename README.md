@@ -1,8 +1,6 @@
 # fPI: Predicting Parkinson's with Acoustic Features
 
-## Authors
-- [Gautam Gupta](https://github.com/GautamGupta17)
-- [Mrinal Bhan](https://github.com/bhanmrinal)
+
 
 What is Parkinson's Disease?
 
@@ -11,7 +9,7 @@ Parkinson's disease is a neurodegenerative disorder that affects millions of peo
 ### Dataset
 We've utilized a dataset containing biomedical voice measurements from 198 individuals. Here's a breakdown:
 
-- Participants: 31 individuals (140 with Parkinson's, 58 healthy)\
+- Participants: 198 individuals (140 with Parkinson's, 58 healthy)\
 - Format: Initially ASCII CSV, converted to .xlsx for easier analysis
 
  #### Attributes:
@@ -53,8 +51,6 @@ This project is deployed as a full-stack web application, enabling global access
 ``Frontend``: Flask for building dynamic and interactive user interfaces.
 
 ``Backend``: Django with Django REST framework (DRF) for rapid development of APIs and web applications. DRF provides a robust foundation for building RESTful APIs.
-
-``Database``: PostgreSQL for storing and managing application data.
 
 ### Results 
 <div align ="center">
