@@ -50,7 +50,7 @@ We investigated the effectiveness of fPI by training and evaluating four machine
 
 This project is deployed as a full-stack web application, enabling global access to the Parkinson's disease detection system. The application leverages the following technologies:
 
-``Frontend``: React.js for building dynamic and interactive user interfaces.
+``Frontend``: Flask for building dynamic and interactive user interfaces.
 
 ``Backend``: Django with Django REST framework (DRF) for rapid development of APIs and web applications. DRF provides a robust foundation for building RESTful APIs.
 
